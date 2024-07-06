@@ -49,27 +49,49 @@ button {
 }
 
 .artist-avatar img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
-.play {
+.avatar {
   position: relative;
-  bottom: 102px;
-  left: 157px;
-  z-index: 10;
-  display: none;
 }
 
-/* .avatar:hover {
-  .play {
-    display: block;
-  }
-} */
+.avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.avatar-play {
+  display: none;
+  top: 65%;
+  right: 7%;
+  transform: translateY(-50%);
+}
+
+.album-play {
+  display: none;
+  top: 80%;
+  right: 7%;
+  transform: translateY(-50%);
+}
+
+.avatar:hover .avatar-play,
+.album:hover .album-play {
+  display: block;
+}
+
 
 .artist-details:hover,
 .album-details:hover {
-  background-color: var(--tertiary-color);
   border-radius: 0.35rem;
+  background: rgb(56, 56, 56);
+  background: -moz-linear-gradient(180deg, rgba(56, 56, 56, 1) 0%, rgba(36, 36, 36, 0.34217436974789917) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(56, 56, 56, 1) 0%, rgba(36, 36, 36, 0.34217436974789917) 100%);
+  background: linear-gradient(180deg, rgba(56, 56, 56, 1) 0%, rgba(36, 36, 36, 0.34217436974789917) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#383838", endColorstr="#242424", GradientType=1);
 }
 
 .outline-btn {

@@ -48,7 +48,7 @@ const Sidebar = () => {
                             <li className='cursor-pointer'>Cookies</li>
                             <li className='cursor-pointer'>About Ads</li>
                             <li className='cursor-pointer'>Accesibility</li>
-                            <li className='cursor-pointer'>Cookies</li>
+                            <li className='cursor-pointer hover:underline'>Cookies</li>
                         </ul>
                     </div>
                     <div className="language-button mt-5">
